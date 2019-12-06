@@ -35,7 +35,7 @@ end
 def reduce_to_any_true(source_array)
   if source_array[index] = true 
     puts true 
-  if source_array[index] does not = ture 
+  else  
     puts false 
   end 
 
