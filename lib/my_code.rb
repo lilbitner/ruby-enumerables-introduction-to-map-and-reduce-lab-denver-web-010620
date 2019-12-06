@@ -25,37 +25,24 @@ def reduce_to_total(source_array,starting_point)
   puts total 
 end 
 
-reduce_to_all_true
+def reduce_to_all_true(source_array)
+  if source_array [index] = true   
+  puts truthy 
+  if source_array[index] = false 
+  puts falsy 
+end 
 
-describe 'my own reduce-like methods' do
-  describe "reduce_to_total returns a running total when not given a starting point" do
-    it "reduces correctly" do
-      source_array = [1,2,3]
-      expect(reduce_to_total(source_array)).to eq(6)
-    end
-  end
+def reduce_to_any_true(source_array)
+  if source_array[index] = true 
+    puts true 
+  if source_array[index] does not = ture 
+    puts false 
+  end 
 
-  describe "reduce_to_total returns a running total when given a starting point" do
-    it "reduces correctly" do
-      source_array = [1,2,3]
-      starting_point = 100
-      expect(reduce_to_total(source_array, starting_point)).to eq(106)
-    end
-  end
 
-  describe "reduce_to_all_true returns true when all values are truthy" do
-    it "reduces correctly" do
-      source_array = [1, 2, true, "razmatazz"]
-      expect(reduce_to_all_true(source_array)).to be_truthy
-    end
-  end
+   
 
-  describe "reduce_to_all_true returns false when any value is false" do
-    it "reduces correctly" do
-      source_array = [1, 2, true, "razmatazz", false]
-      expect(reduce_to_all_true(source_array)).to be_falsy
-    end
-  end
+ 
 
   describe "reduce_to_any_true returns true when a truthy value is present" do
     it "reduces correctly" do
